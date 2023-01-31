@@ -5,6 +5,18 @@
       implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
       annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
       
+      
+      
+      View with XAML view logic only
+
+      ViewModel which handles click handlers and creating new view models. Handles routed events etc.
+
+      Model which is my data container and business logic regarding validating the model data.
+
+      Services which populate the model with data. Eg call a web server, load it from disk, save to disk etc. Depending on the example often both my model       and service will implement IPropertyChanged. Or they may have event handlers instead.
+
+      Any complex application imo needs another layer. I call it model + service, view, viewmodel. The service abstracts your business logic and takes a         model instance as a dependency or creates a model.
+      
     
       
       
